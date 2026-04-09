@@ -1,0 +1,9 @@
+{
+  "soundness": 4,
+  "novelty": 4,
+  "significance": 4,
+  "clarity": 5,
+  "evidence_quality": 4,
+  "overall": 4,
+  "justification": "While the paper is well-motivated and the high-level formulations are standard, the mathematical audit flags a critical timing inconsistency in the GARCH standardization/rescaling (high-confidence FAIL) and unresolved index ambiguities that directly affect what risk is being forecast. The central diagnostic narrative is further weakened by an R-squared inconsistency between the text and Figure 2, and key implementation details (GARCH specs, factor construction, Ledoit\u2013Wolf variant, PSD handling) are missing, limiting reproducibility and interpretability. Evidence is based on a single small universe (N=10) and one window length with no robustness checks or statistical characterization of differences, so generalizability and impact are limited despite plausibly favorable shrinkage results and large condition-number gaps. Substantial clarifications, robustness analyses, and targeted diagnostics are needed before strong conclusions can be supported."
+}
